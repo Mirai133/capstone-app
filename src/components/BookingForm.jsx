@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 
-const OrderForm = () => {
+const BookingForm = () => {
     const FirstNameErrorMessage = () => {
         return (
             <p className="FieldError">First Name should have at least 2 characters</p>
@@ -145,4 +145,4 @@ const OrderForm = () => {
   )
 }
 
-export default OrderForm
+export default BookingForm

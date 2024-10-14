@@ -1,9 +1,9 @@
 import React from 'react'
-import OrderForm from '../OrderForm'
+import BookingForm from '../BookingForm'
 
 const Form = () => {
   return (
-    <OrderForm/>
+    <BookingForm/>
   )
 }
 
