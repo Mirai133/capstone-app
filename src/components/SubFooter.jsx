@@ -3,7 +3,7 @@ import AboutImg from '../images/about image.png'
 
 const SubFooter = () => {
   return (
-    <div className='sub-footer'>
+    <aside className='sub-footer'>
         <div className='sub-footer-container'>
             <div className='sub-footer-left-content'>
                   <h2 className='sub-footer-title'>Little Lemon</h2>
@@ -12,7 +12,7 @@ const SubFooter = () => {
             </div>
             <img src={AboutImg} alt="" className='sub-footer-img' />
         </div>
-    </div>
+    </aside>
   )
 }
 

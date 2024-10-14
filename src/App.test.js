@@ -1,8 +1,19 @@
+import React from 'react'
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import BookingForm from './components/BookingForm';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test('renders the navbar with the correct text', () => {
+    render(<BookingForm/>);
+
+    const dateText = screen.getByText(/date/i);
+    expect(dateText).toBeInTheDocument();
+
+    const firstNameText = screen.getByText(/first name/i);
+    expect(firstNameText).toBeInTheDocument();
+
+
+    const lastNameText = screen.getByText(/last name/i);
+    expect(lastNameText).toBeInTheDocument();
+
+})
+

@@ -34,7 +34,7 @@ const Testimonials = () => {
     ]
 
   return (
-    <div className='testimonials'>
+    <main className='testimonials'>
         <div className='testimonials-container'>
             <h2 className='testimonials-title'>Testimonials</h2>
             <div className='customers-cards-container'>
@@ -50,7 +50,7 @@ const Testimonials = () => {
                     ))}
             </div>
         </div>
-    </div>
+    </main>
   )
 }
 
