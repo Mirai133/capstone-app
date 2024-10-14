@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../images/logo.svg'
 import hamburger from "../images/🦆 icon _hamburger menu.svg"
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -14,13 +15,13 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
         <div className='nav-container'>
-            <img src={logo} alt="" />
+            <Link to="/home"><img src={logo} alt="" /></Link>
             <ul className="nav-links">
-              <li><span className='nav-link'>Home</span></li> 
+              <li><Link to="/home" className='nav-link'>Home</Link></li> 
               <li><span className='nav-link'>About</span></li> 
               <li><span className='nav-link'>Menu</span></li> 
               <li><span className='nav-link'>Reservation</span></li> 
-              <li><span className='order-online'>Order Online</span></li> 
+              <li><Link to="/form" className='order-online'>Order Online</Link></li> 
             </ul>
             <img src={hamburger} alt="" className='hamburger-icon' onClick={clickNav}/>
         </div>
@@ -28,11 +29,11 @@ const Navbar = () => {
         <div className={`responsive-nav ${hamburgerClicked ? "" : "none"}`}>
             <button className='close-btn' onClick={clickNav}>Close</button>
             <ul className="nav-responsive-links">
-              <li><span className='nav-link'>Home</span></li> 
+              <li><Link to="/home" className='nav-link'>Home</Link></li> 
               <li><span className='nav-link'>About</span></li> 
               <li><span className='nav-link'>Menu</span></li> 
               <li><span className='nav-link'>Reservation</span></li> 
-              <li><span className='order-online'>Order Online</span></li> 
+              <li><Link to="/form" className='order-online'>Order Online</Link></li> 
             </ul>
         </div>
 

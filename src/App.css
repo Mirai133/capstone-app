@@ -1,4 +1,8 @@
 
+body {
+    font-family:  Roboto;
+}
+
 /* Navbar */
 
 .navbar {
@@ -25,6 +29,7 @@
     color: black;
     font-size: 18px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-link:hover {
@@ -38,6 +43,8 @@
     cursor: pointer;
 
     color: white;
+    text-decoration: none;
+
     background-color:  #495E57;
     border-radius: 15px;
     transition: 0.2s;
@@ -407,7 +414,88 @@
     text-decoration: underline;
 }
 
+/* Order-form */
 
+
+.order-form {
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 80px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.form-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.form-label {
+    font-size: 20px;
+}
+
+.form-input {
+    height: 40px;
+    border-radius: 6px;
+    border-color: rgb(212, 212, 212);
+    border-width: 1px;
+    border-style: solid;
+    font-size: 12px;
+
+    padding-inline-start:8px;
+    padding-inline-end:8px;
+}
+
+.form-input-type-2 {
+    height: 30px;
+    appearance: none;
+    outline: transparent solid 2px;
+    border-color: rgb(212, 212, 212);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-top-width: 0 ;
+    border-left-width: 0 ;
+    border-right-width: 0 ;
+    font-size: 16px;
+
+}
+
+.form-btn {
+    border-width: 0;
+    background-color: #F4CE14;
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 16px;
+
+    transition: 0.4s;
+}
+
+.form-btn:hover {
+    background-color: white;
+}
+
+.FieldError {
+    color: red;
+}
+
+.submited-form {
+    font-size: 32px;
+    color: #F4CE14;
+    margin: 0 60px 0 60px;
+}
+
+.none {
+    display: none;
+}
 
 
 
@@ -466,5 +554,9 @@
 @media(max-width:680px) {
   .header-img {
     display: none;
+  }
+
+  .submited-form {
+    font-size: 16px;
   }
 }

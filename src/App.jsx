@@ -1,20 +1,20 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
-import Header from './components/Header';
 import Navbar from './components/Navbar';
-import Specials from './components/Specials';
-import SubFooter from './components/SubFooter';
-import Testimonials from './components/Testimonials';
+import Home from './components/pages/Home';
+import Form from './components/pages/Form';
 
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Header/>
-      <Specials/>
-      <Testimonials/>
-      <SubFooter/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/home' element={<Home/>}/>
+        <Route path='/form' element={<Form/>}/>
+      </Routes>
       <Footer/>
     </div>
   );
