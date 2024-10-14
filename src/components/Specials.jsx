@@ -31,7 +31,7 @@ const Specials = () => {
 
 
   return (
-    <div className='specials'>
+    <article className='specials'>
      <div className='specials-container'>
         <div className='specials-title'>
             <h2 className='specials-title-text'>Specials</h2>
@@ -56,7 +56,7 @@ const Specials = () => {
                 ))}
         </div>
      </div>
-    </div>
+    </article>
   )
 }
 

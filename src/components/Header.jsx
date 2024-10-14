@@ -3,7 +3,7 @@ import restauranfood from '../images/restauranfood.jpg'
 
 const Header = () => {
   return (
-    <div className='header'>
+    <header className='header'>
         <div className='header-container'>
             <h1 className='header-title'>Little Lemon</h1>
             <h3 className='header-sub-title'>Chikago</h3>
@@ -11,7 +11,7 @@ const Header = () => {
             <button className='header-btn'>Reserve a Table</button>
         </div>
         <img src={restauranfood } alt="" className='header-img' />
-    </div>
+    </header>
   )
 }
 

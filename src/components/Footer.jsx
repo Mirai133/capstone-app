@@ -3,7 +3,7 @@ import FooterImg from '../images/Asset 9@4x.png'
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <footer className='footer'>
         <div className='footer-container'>
             <img src={FooterImg} alt=""  className='footer-img'/>
             <div className='footer-card'>
@@ -28,7 +28,7 @@ const Footer = () => {
                    <span className='footer-list-item'>Whatsapp</span>
             </div>
         </div>
-    </div>
+    </footer>
   )
 }
 
