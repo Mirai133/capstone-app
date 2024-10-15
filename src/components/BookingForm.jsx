@@ -27,11 +27,6 @@ const BookingForm = () => {
     }
 
 
-    const [submited, setSubmited] = useState(false)
-
-    const submitForm = () => {
-        setSubmited(!submited)
-    }
 
 
     const [date, setDate] = useState("");
@@ -85,7 +80,7 @@ const BookingForm = () => {
             cardNumber.value.length >= 16
         ){
             clearForm();
-            submitForm();
+            alert(`Congratulations! ${firstName.value} ${lastName.value}, your table has been booked on ${date} at ${time} for ${seats} seats`)
         } else {
             alert("Please fill all required fields properly")
         }
@@ -95,7 +90,7 @@ const BookingForm = () => {
 
   return (
     <div className='order-form '>
-        <form onSubmit={handleSubmit} action="" className={`form ${submited ? "none" : ""}`}>
+        <form onSubmit={handleSubmit} action="" className="form ">
             <div className='form-container'>
             <label htmlFor="" className='form-label'>Date</label>
             <input type="date" value={date} onChange={(e) => {setDate(e.target.value)}}  min="2024-10-14" max="2024-10-21" required className='form-input'/>
@@ -137,10 +132,6 @@ const BookingForm = () => {
 
             <button className='form-btn'>Submit</button>
         </form>
-
-        <div className={`submited-form ${submited ? "" : "none"}`}>
-            <h1>Congratulations!{firstName.value} {lastName.value}, your table has been booked on {date} at {time} for {seats} seats</h1>
-        </div>
     </div>
   )
 }

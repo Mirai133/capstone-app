@@ -39,7 +39,7 @@ const Specials = () => {
         </div>
         <div className='cards-container'>
                 {cardsList.map((card) => (
-                     <div className='card'>
+                     <div className='card' key={card.id}>
                      <img src={card.img} alt={card.title} className='card-img' />
                      <div className='card-titles'>
                          <h2 className='card-title'>{card.title}</h2>

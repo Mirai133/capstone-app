@@ -39,7 +39,7 @@ const Testimonials = () => {
             <h2 className='testimonials-title'>Testimonials</h2>
             <div className='customers-cards-container'>
                     {testimonialsCards.map((card) => (
-                        <div className='customer-card'>
+                        <div className='customer-card' key={card.id}>
                             <img src={RatingImg} alt="" />
                             <div className='cust-card-title'>
                             <img src={card.img} alt="" />
